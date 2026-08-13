@@ -205,7 +205,6 @@ Aja tämä komento terminaalissa (komento aloittaa OpenClawin asennuksen)
     -   Muokkaa "agents" ja "defaults" osioiden sisällä "model" osiota niin että "primary" on tämä uusi nvidian ilmainen malli ja "fallbacks" voi olla tuo vanha openrouter/auto.
 -   "agents" -osion lopputulos tulisi näyttää tältä:
 
-    ...
     "agents": {
       "defaults": {
         "workspace": "/home/(käyttäjänimesi)/.openclaw/workspace",
@@ -223,7 +222,6 @@ Aja tämä komento terminaalissa (komento aloittaa OpenClawin asennuksen)
         }
       }
     },
-    ...  
 
 -   Kun olet tehnyt muokkaukset `openclaw.json` tiedostoon, tallenna se ja aja sen jälkeen `openclaw doctor` -komento. Jos jotain syntaksivirheitä ilmaantui, doctor kertoo niistä.
 -   Jos kaikki on doctorin mukaan kunnossa, aja komento `openclaw gateway restart`
