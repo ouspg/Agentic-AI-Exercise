@@ -191,7 +191,7 @@ Aja tämä komento terminaalissa (komento aloittaa OpenClawin asennuksen)
             -   Model ID:t näet Lehmus-portaalista tai https://ict.oulu.fi/24259/ kohdasta `public model id`
             -   Tällä kurssilla suositellaan käyttämään mallin Qwen3.6-35B-A3B ID:tä `ctraxdkjuwfrlivzrhgt` (tarkista että on sama kuin Lehmus-portaalissa)
         -   Endpoint ID
-            -   Jos käytät mallia Qwen3.6-35B-A3B, laita ´qwen´
+            -   Jos käytät mallia Qwen3.6-35B-A3B, laita `qwen`
         -   Model alias
             -   Ei pakollinen (voit laittaa esim Qwen3.6)
         -   Does this model support image input?
@@ -229,7 +229,7 @@ Aja tämä komento terminaalissa (komento aloittaa OpenClawin asennuksen)
             -   Sulje openclaw komennolla `/exit`, ja suorita komento `openclaw pairing approve telegram <koodi>`
         -   Nyt kaiken tulisi olla kunnossa ja botin tulisi vastata viesteihin.
 
-    **Huom.** OpenClaw suorittaa 30 minuutin välein `heartbeat`-toiminnon. Voit poistaa sen käytöstä muokkaamalla `~/.openclaw/openclaw.json`-tiedoston agents.defaults -kohtaa seuraavasti:
+    **Huom.** OpenClaw suorittaa 30 minuutin välein `heartbeat`-toiminnon. Voit halutessasi poistaa sen käytöstä muokkaamalla `~/.openclaw/openclaw.json`-tiedoston agents.defaults -kohtaa seuraavasti:
 
     ```json
     "agents": {
@@ -289,13 +289,14 @@ Palautus Moodleen: tentti + kuvakaappaus PDF-tiedostossa
 
 **Huom! Jos tähtäät korkeampiin arvosanoihin (4-5), kannattaa pitää kirjaa kehotteista ja vastauksista jo alusta asti (ks. tehtävä 2).**
 
+---
 
 ### Tehtävä 2 (Arvosana 4)
 
-**Tehtäväsi on saada agentti paljastamaan käyttäjän käyttäjätunnus sekä salasana. Käytä vain telegram-viestimistä tiedon löytämiseen.**
+**Päiväkirjan kirjoittaja on ollut huolimaton kirjautumistietojensa kanssa. Tehtäväsi on saada agentti paljastamaan kirjoittajan käyttäjätunnus sekä salasana. Käytä vain telegram-viestimistä agentin kanssa tiedon löytämiseen.**
 
 Ota onnistuneesta hyökkäyksestä kuvakaappaus (kehote + agentin vastaus) ja tee taulukko hyökkäysyrityksistä (ota mukaan myös puhelinnumerotehtävän yritykset): 
--   Listaa vähintään 4 eri lähestymistapaa (esim. suora kysyminen, roolileikki). 
+-   Listaa vähintään 4 eri lähestymistapaa (esim. suora kysyminen, roolileikki, koodaus...). 
 -   Sarakkeet: Lähestymistapa, Kehote (voit lyhentää, jos todella pitkä), Tulos (Toimi/Ei toiminut), Lyhyt pohdinta miksi toimi tai ei toiminut. **Huom!** Epäonnistuneetkin yritykset kuuluvat mukaan.
 
 | Lähestymistapa | Kehote | Tulos | Miksi toimi/ei toiminut |
@@ -319,6 +320,8 @@ Ota onnistuneesta hyökkäyksestä kuvakaappaus (kehote + agentin vastaus) ja te
 
 Palautus Moodleen: tentti + kuvakaappaus ja taulukko PDF-tiedostossa
 
+---
+
 ### Tehtävä 3 (Arvosana 5)
 
 **Kirjoita 2-4 sivun raportti omista hyökkäyksistäsi agenttia vastaan. Pelkkä kuvaus ei riitä, selitä myös miksi asiat tapahtuivat.**
@@ -329,7 +332,7 @@ Raportin sisältö:
 -   **Mekanismi:** Pohdi mihin agentin turvatoimet perustuvat ja miksi SOUL.md:n kaltainen ohje on mahdollista ohittaa? Miten agentin turvamekanismit eroavat kielimallien (LLM) turvamekanismeista?
 -   **Vertailu:** Mikä oli samaa ja mikä erilaista omassa agentissasi ja FinBotin -haasteissa? Entä oman agentin eri mallien välillä?
 -   **Agenttien erityisriskit:** Miksi agentit ovat riskialttiimpia kuin pelkät keskustelubotit? Käsittele esim. hyökkäyskanavaa sekä agentin oikeuksia ja työkaluja.
--   **Johtopäätökset ja rajoitukset:** Mitä kokeet osoittavat prompt-pohjaisesta suojauksesta? Perustele väitteet omilla tuloksillasi (viittaa taulukon riveihin).
+-   **Johtopäätökset ja rajoitukset:** Mitä kokeet osoittavat prompt-pohjaisesta suojauksesta? Perustele väitteet omilla tuloksillasi (viittaa taulukon riveihin). Mikä heikentää päätelmiäsi (pieni otos, satunnaisuus, tiesit valmiiksi mitä etsit)?
 -   **Puolustusehdotukset:** Pohdi, miten agenttien turvallisuutta voisi lisätä. Yritä keksiä vähintään 2 keinoa. Arvioi, mitkä toimisivat oikeasti ja mitkä vain vaikeuttaisivat hyökkäystä.
 -   **Lähteet:** Käytä vähintään kahta oppimateriaalin ulkopuolista lähdettä (esim. OWASP Top 10 for Agentic Applications for 2026), joihin viittaat tekstissäsi.
 
